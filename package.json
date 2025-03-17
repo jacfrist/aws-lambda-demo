@@ -1,0 +1,19 @@
+{
+    "name": "aws-lambda-demo",
+    "version": "1.0.0",
+    "description": "An AWS Lambda Demo",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "npx nodemon server.js"
+    },
+    "author": "Jacqueline Frist",
+    "license": "none",
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.767.0",
+        "aws-sdk": "^2.1692.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}

@@ -61,8 +61,8 @@
             if (response.ok) {
                 const data = await response.json();
                 let html = "<br /><ul>"
-                for (let item of data) {
-                    html += `<li>${item.data.S}</li>`;
+                for (let item of data || []) {
+                    html += `<li>${item.data?.S || "No data"}</li>`;
                 }
                 html += "</ul>";
                 document.getElementById('noteData').innerHTML = html;
